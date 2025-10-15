@@ -3,9 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aphrodite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/75c8cbc5d8.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    
+<body class="bg-[#FFFFFF]">
+  <!-- Navbar -->
+  <header class=" bg-[#EEF5F8] flex justify-between items-center   md:px-16 py-4">
+    <img src="images/Logo.png" alt="">
+    <nav class="hidden md:flex space-x-8 text-[#ADADAD] font-medium">
+      <a href="#" class="hover:text-sky-600">HOME</a>
+      <a href="#" class="hover:text-sky-600">ABOUT</a>
+      <a href="#" class="hover:text-sky-600">service</a>
+      <a href="#" class="hover:text-sky-600">PAGES</a>
+      <a href="#" class="hover:text-sky-600"><img src="images/Contact Us.png" class="h-[30px]"  alt=""></a>
+    </nav>
+    <button class="md:hidden text-sky-600 text-2xl">
+      <img src="images/menu.png" alt="" class="w-[48px] h-[48px]">
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-[#EEF5F8] flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-12 gap-10">
+    <!-- Left Text -->
+    <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
+      <p class="text-[#25B8AF] text-[24px] font-normal tracking-wider">THE BEAUTY CENTER</p>
+      <h2 class="text-[108px] text-[#1A1A1A] md:text-5xl font-normal leading-tight">
+        Suitable For All <br /> Skin Problems
+      </h2>
+      <div class="pt-[60px] pb-[116px] flex justify-center md:justify-start items-center gap-4">
+        <button class="border border-sky-500 hover:bg-sky-700 text-[#519DBC] px-6 py-3 rounded-full font-medium">
+          BOOK NOW
+        </button>
+        <span class="text-gray-500 font-semibold">OR</span> <img src="images/Play Video - Btn.png" alt="">
+      </div>
+      <hr>
+      <p class=" text-gray-500 text-[20px] md:text-base max-w-md">
+        Care for skin and natural beauty through professional treatments using natural products.
+      </p>
+    </div>
+
+    <!-- Right Image -->
+    <div class="w-full md:w-1/2 flex justify-center relative">
+      <img src="images/Remove-BG-attractive-naked-asian-girl-in-floral-wreath-isol-2023-11-27-04-49-21-utc 1.png" 
+           alt="Beauty Model" 
+           class="w-72 md:w-[420px] rounded-2xl object-cover">
+    </div>
+  </section>
+
+  <!-- OUR SERVICES SECTION -->
+  <section class="text-center py-[190px] md:px-16 py-16 bg-[#f9fcfd]">
+    <p class="text-[#25B8AF] text-[24px] font-normal uppercase tracking-widest mb-2">our services</p>
+    <h2 class="text-[60px] md:text-4xl font-normal mb-[60PX]">Beauty Rituals of Our Offer</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <!-- Service 1 -->
+      <div class="flex flex-col items-center text-center space-y-4 pt-[60px]">
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-[#d0f0ed]">
+          <img src="images/Inactive.png" class="fa-solid fa-face-smile text-teal-600 text-2xl" alt="">
+        </div>
+        <h3 class="text-2xl font-normal text-[#25B8AF]">Facial Treatments</h3>
+        <p class="text-[#5C5C5C] font-light text-lg px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="flex flex-col items-center text-center space-y-4">
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-[#d7e9fa]">
+          <img src="images/active.png" class="fa-solid fa-face-smile text-teal-600 text-2xl" alt="">
+        </div>
+        <h3 class="text-2xl font-normal text-[#519DBC]">Skin Tightening</h3>
+        <p class="text-[#5C5C5C] font-light text-lg px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="text-[#519DBC] text-xl font-normal hover:underline">Learn More</a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="flex flex-col items-center text-center space-y-4 pt-[60px]">
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-[#fde8e8]">
+          <img src="images/Icon.png" class="fa-solid fa-face-smile text-teal-600 text-2xl" alt="">
+        </div>
+        <h3 class="text-2xl font-normal text-[#FAA6A4]">Healthy Products</h3>
+        <p class="text-[#5C5C5C] font-light text-lg px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section class=" lg:pr-[0px] flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-20 gap-10">
+    <!-- Left Text -->
+    <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
+      <p class="text-[#25B8AF] font-normal text-[24px] uppercase tracking-widest">About Us</p>
+      <h2 class="text-6xl font-normal md:text-4xl font-semibold">Crafting Beauty Beyond Boundaries</h2>
+      <p class="text-[#5C5C5C] text-lg font-light max-w-md">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <button class="bg-[#519DBC] font-normal font-xl hover:bg-sky-700 text-white px-6 py-3 rounded-full font-medium">
+        DISCOVER MORE
+      </button>
+    </div>
+
+    <!-- Right Images -->
+    <div class=" w-full md:w-1/2 flex justify-center relative">
+      <div class="flex gap-[27px] ">
+        <img src="images/Image 1.png" alt="Facial Treatment" class="w-[350] h-[430px] md:w-64  shadow-lg object-cover">
+        <img src="images/Image 2.png" alt="Skin Care" class="w-[350] h-[430px] md:w-64  shadow-lg object-cover">
+      </div>
+      <div class="absolute -top-[104px] -right-[200px] -left-[-227px] w-[350px] h-[638px] bg-sky-100  -z-10 hidden md:block"></div>
+    </div>
+  </section>
+
+  <!-- RATING SECTION -->
+  <section class=" py-[190px]">
+    <div class="items-center font-normal px-[120px] h-[340px] bg-[url(images/image.png)] bg-cover bg-center text-white  mx-auto grid grid-cols-2 md:grid-cols-4 text-center gap-8">
+      <div>
+        <p class="text-[84px] ">20<sup>+</sup></p>
+        <p class="mt-2 text-2xl uppercase tracking-wider">Years Of Experience</p>
+      </div>
+      <div>
+        <p class="text-[84px] ">769<sup>+</sup></p>
+        <p class="mt-2 text-2xl uppercase tracking-wider">Satisfied Clients</p>
+      </div>
+      <div>
+        <p class="text-[84px] ">16<sup>+</sup></p>
+        <p class="mt-2 text-2xl uppercase tracking-wider">Skin Treatments</p>
+      </div>
+      <div>
+        <p class="text-[84px] ">50<sup>+</sup></p>
+        <p class="mt-2 text-2xl  uppercase tracking-wider">Trained Experts</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section class=" text-center">
+  <h3 class="text-2xl font-normal text-[#25B8AF] uppercase tracking-wider mb-2">
+    Meet The Doctors
+  </h3>
+  <h2 class="text-6xl font-normal md:text-4xl font-semibold mb-12">Discover Our Experts</h2>
+
+  <div class="h-[467px] max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <!-- Doctor 1 -->
+    <div class="bg-white shadow-md  p-2 border-4 border-pink-200">
+      <img
+        src="images/Mask group.png" 
+        alt="Dr. Hannah Wagner"
+        class="w-full h-[359px] object-cover  mb-4"
+      />
+      <p class="text-base uppercase text-[#ADADAD] mb-1 tracking-wider">
+        Plastic Surgeon
+      </p>
+      <h3 class="text-2xl font-normal text-[#1A1A1A]">Dr. Hannah Wagner</h3>
+    </div>
+
+    <!-- Doctor 2 -->
+    <div class="bg-white shadow-md  p-2 border-4 border-sky-300">
+      <img
+        src="images/Mask group.png" 
+        alt="Dr. Bryan Hunter"
+        class="w-full h-[359px] object-cover mb-4"
+      />
+      <p class="text-base uppercase text-[#25B8AF] mb-1 tracking-wider">
+        Anesthesiologist
+      </p>
+      <h3 class="text-2xl font-normal text-[#1A1A1A]">Dr. Bryan Hunter</h3>
+    </div>
+
+    <!-- Doctor 3 -->
+    <div class="bg-white shadow-md p-2 border-4 border-pink-200">
+      <img
+        src="images/Mask group.png" 
+        alt="Dr. Sarah Nelson"
+        class="w-full h-[359px] object-cover  mb-4"
+      />
+      <p class="text-base uppercase text-[#ADADAD] mb-1 tracking-wider">
+        Dermatologist
+      </p>
+      <h3 class="text-2xl font-normal text-[#1A1A1A]">Dr. Sarah Nelson</h3>
+    </div>
+  </div>
+  </section>
+  
+  <section class="py-[190px] h-[60px]">
+  <div class="container justify-between mx-auto  flex  lg:flex-row items-center gap-8">
+    <img src="images/Item 1.png" alt="">
+    <img src="images/Item 2.png" alt="">
+    <img src="images/Item 3.png" alt="">
+    <img src="images/Item 4.png" alt="">
+  </div>
+  </section>
+  
+  <!-- (Form box) -->
+  <section class="flex flex-col  items-center  lg:flex-row items-stretch w-full ">
+    <!-- Left Image Section -->
+    <div class=" lg:w-1/2">
+      <img src="images/Video.png" alt="" class="w-[724px] h-[417px] mt-[64px] mb-[64px]">
+    </div>
+  
+    <!-- Right Form Section -->
+    <div class="w-[724px] h-[545px] lg:w-1/2 bg-[#519DBC] flex flex-col justify-center px-8 lg:px-16 py-12">
+      <h2 class="text-3xl font-normal text-[#FFFFFF] mb-8">Ready To Glow With Us</h2>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" placeholder="Name" class="bg-transparent border-b border-white text-[#FFFFFF] text-base font-light placeholder-white focus:outline-none py-2">
+        <input type="email" placeholder="Email" class="bg-transparent border-b border-white text-[#FFFFFF] text-base font-light placeholder-white focus:outline-none py-2">
+        <input type="date" class="bg-transparent border-b border-white text-[#FFFFFF] text-base font-light placeholder-white focus:outline-none py-2">
+        <select class="bg-transparent border-b border-white text-[#FFFFFF] text-base font-light placeholder-white focus:outline-none py-2">
+          <option value="" class="text-gray-700">Type of Service</option>
+          <option>Facial</option>
+          <option>Massage</option>
+          <option>Skin Care</option>
+        </select>
+        <button class=" w-[152px]border-b-[1px] md:col-span-2 mt-4 bg-transparent border-b-[1px]  border-white text-white py-3  hover:bg-white hover:text-sky-600 transition">
+          BOOK NOW →
+        </button>
+      </form>
+    </div>
+  </section>
+  
+  
+  <!-- Testimonials Section -->
+  <section class="py-[190px] text-center bg-gray-50">
+    <h3 class="text-2xl font-normal text-[#25B8AF] uppercase tracking-wider">Testimonials</h3>
+    <h2 class="text-6xl font-normal text-[#1A1A1A] md:text-4xl font-semibold mt-2">
+      From Our Satisfied Client
+    </h2>  
+    <div class="max-w-3xl mx-auto mt-10">
+      <div class="">
+        <img
+          src="images/Treatment.png"
+          alt="client"
+          class="w-[800px] h-[83px] rounded-full mx-auto mb-4"
+        />
+        <p class="text-[#5C5C5C] text-lg font-light mb-4">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+          ut aliquip ex ea commodo consequat”
+        </p>
+        <div class="flex justify-center mt-2">
+          <span class="text-[#F8EC80] text-xl">★★★★★</span>
+        </div>
+        <p class="font-normal text-[#519DBC] text-2xl">Loren Johnson</p>
+
+      </div>
+    </div>
+  </section>  
+  <!-- Blog Section -->
+  <section class="md:px-8">
+    <div class="flex justify-between items-center mb-8">
+      <div>
+        <h3 class="text-2xl font-normal text-[#25B8AF] uppercase tracking-wider">
+          Featured Post
+        </h3>
+        <h2 class="text-6xl font-normal md:text-4xl font-semibold mt-2">From Our Blog</h2>
+      </div>
+      <a
+        href="#"
+        class="border border-sky-500 text-[#519DBC] text-xl px-4 py-2 rounded-full hover:bg-sky-50 transition"
+        >Discover More</a
+      >
+    </div>  
+    <div class=" grid md:grid-cols-3 gap-[100px] ">
+      <!-- Main Featured Post -->
+      <div class="w-[702px] md:col-span-2">
+        <img
+          src="images/Image (1).png"
+          alt="skincare"
+          class="h-[487px] object-cover mb-4"
+        />
+        
+        <h3 class="text-2xl text-[#1A1A1A] font-normal mb-2">
+          Unlocking The Secrets To Glowing Skin: Essential Skincare Tips
+        </h3>
+        <p class="text-[#5C5C5C] text-light text-lg mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="flex justify-between items-center text-base text-[#5C5C5C]">
+          <p>Neville Bright • 30 January 2024</p>
+          <a
+            href="#"
+            class="bg-[#25B8AF] text-base text-white px-3 py-1 rounded-full text-xs font-medium"
+            >Tips</a
+          >
+        </div>
+    </div>  
+    <!-- Side Posts -->
+    <div class="space-y-6">
+      <div class="flex-col items-center gap-4">
+          <img src="images/Mask group (1).png"alt="beauty"class="w-[405px] h-[188px] object-cover rounded-xl"/>
+          <div class="">
+            <h4 class="font-normal text-2xl text-[#1A1A1A]">Revealing the beauty within ...</h4>
+            <div class="flex justify-between">
+                <p class="text-base text-[#5C5C5C] font-light mt-1">Nadia Lopez • 20 Jan 2024</p>
+              <a href="#"class="bg-[#EBEBEB] text-[#ADADAD] px-3 py-1 rounded-full text-base font-normal">Read More</a>
+            </div>
+          </div>
+      </div>
+      <div class="space-y-6">
+        <div class="flex-col items-center gap-4">
+            <img src="images/Mask group (2).png"alt="beauty"class="w-[405px] h-[188px] object-cover rounded-xl"/>
+            <div class="">
+              <h4 class="font-normal text-2xl text-[#1A1A1A]">The New Agent Of skincare in ...</h4>
+              <div class="flex justify-between">
+                  <p class="text-base text-[#5C5C5C] text-light mt-1">Nadia Lopez • 20 Jan 2024</p>
+                  <a href="#"class="bg-[#EBEBEB] text-[#ADADAD] px-3 py-1 rounded-full text-base font-normal">Read More</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!-- Footer -->
+  <footer class="pt-[190px]">
+    <div class="bg-[#519DBC] h-[478px] justify-between   items-center text-white pt-[80px] px-[110px] ">
+    <div class=" w-[1150px] mx-auto  grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <img src="images/Large Logo.png" alt="" class="mb-[32px]">
+        <p class="text-lg text-light text-[#FFFFFF]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-normal mb-[32px]">We’re Open At</h3>
+        <p class="text-base text-light text-[#FFFFFF] flex mb-[16px]">
+          <img src="images/Hours.png" alt="">Monday - Friday : 09:00 AM - 20:00 PM 
+        </p>
+        <p class="text-base text-light text-sky-100 flex">
+          <img src="images/Hours.png" alt="">Saturday - Sunday : 09:00 AM - 18:00 PM
+        </p>
+      </div>
+      <div class="pb-[40px]">
+        <h3 class="text-2xl font-normal mb-[32px]">Get In Touch With Us</h3>
+        <p class="text-base text-light text-[#FFFFFF] flex">
+          <img src="images/mail-envelope-mails-communications-message.png" alt="">
+          info@8pxlstudio.com 
+        <p>
+        <p class="text-base text-light text-[#FFFFFF] flex">
+          <img src="images/placeholder-location-pin point-map point-pin.png" alt="">
+          Victoria Street, London, United Steed
+        </p>
+      </div>
+      <hr class="w-[1050px] ">
+    </div>
+    <div class="flex justify-between mt-8 text-center text-base text-[#FFFFFF]">
+      <div class=" flex gap-8">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>  
+      <p>Copyright © 2025 Aphrodite. All Rights Reserved.</p>
+      <p>Terms & Conditions</p>
+      
+    </div>
+    </div>
+  </footer>
+
 </body>
 </html>
